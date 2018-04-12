@@ -19,7 +19,6 @@ export default class HackathonRondoDaszynskiego extends React.Component {
         <Pano source={asset(data["pano"])}/>
         <ElPassion />
         <AmbientLight intensity={ 2.6 } />
-        
         <Building data={buildings["spinnaker"]}/>
         <Building data={buildings["generation"]}/>
         <Building data={buildings["skyliner"]} />

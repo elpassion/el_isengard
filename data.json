@@ -2,36 +2,30 @@
   "buildings": {
     "spinnaker": {
       "building_name": "Spinnaker Office Tower",
-      "height" : {
-        "tip": 203
-      },
-      "plane": {
+      "dimensions": {
         "width": 35,
-        "height": 85
+        "height": 203,
+        "depth": 85
       },
-      "style": {
-        "transform": [
-          { "translate": [48, -135, -90] },
-          { "rotateX": -90},
-          { "rotateZ": -2}
-        ]
+      "transform": {
+        "translateX": 48,
+        "translateY": -135,
+        "translateZ": -90,
+        "rotateY": -2
       }
     },
     "generation": {
       "building_name": "Generation Park",
-      "height": {
-        "tip": 180
-      },
-      "plane": {
+      "dimensions": {
         "width": 37,
-        "height": 35
+        "height": 180,
+        "depth": 35
       },
-      "style": {
-        "transform": [
-          { "translate": [-59, -135, -76] },
-          { "rotateX": -90},
-          { "rotateZ": -5}
-        ]
+      "transform": {
+        "translateX": -59,
+        "translateY": -135,
+        "translateZ": -76,
+        "rotateY": -5
       },
       "assets": {
         "obj": "",
@@ -40,19 +34,16 @@
     },
     "skyliner": {
       "building_name": "Skyliner",
-      "height": {
-        "tip": 195
-      },
-      "plane": {
+      "dimensions": {
         "width": 60,
-        "height": 25
+        "height": 195,
+        "depth": 25
       },
-      "style": {
-        "transform": [
-          { "translate": [77, -135, 93.5] },
-          { "rotateX": -90},
-           {"rotateZ": 0}
-        ]
+      "transform": {
+        "translateX": 77,
+        "translateY": -135,
+        "translateZ": 93.5,
+        "rotateY": 0
       }
     }
   },
