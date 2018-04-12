@@ -11,15 +11,15 @@ import {
   View,
 } from 'react-vr';
 import { Building } from './building'
-import Data from './data.json'
+import data from './data.json'
 
-const buildings = Data["buildings"]
+const buildings = data["buildings"]
 
 export default class HackathonRondoDaszynskiego extends React.Component {
   render() {
     return (
       <View>
-        <Pano source={asset(Data["pano"])}/>
+        <Pano source={asset(data["pano"])}/>
         <Text
           style={{
             backgroundColor: '#777879',
