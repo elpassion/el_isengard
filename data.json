@@ -1,0 +1,60 @@
+{
+  "buildings": {
+    "spinnaker": {
+      "building_name": "Spinnaker Office Tower",
+      "height" : {
+        "tip": 203
+      },
+      "plane": {
+        "width": 35,
+        "height": 85
+      },
+      "style": {
+        "transform": [
+          { "translate": [48, -135, -90] },
+          { "rotateX": -90},
+          { "rotateZ": -2}
+        ]
+      }
+    },
+    "generation": {
+      "building_name": "Generation Park",
+      "height": {
+        "tip": 180
+      },
+      "plane": {
+        "width": 37,
+        "height": 35
+      },
+      "style": {
+        "transform": [
+          { "translate": [-59, -135, -76] },
+          { "rotateX": -90},
+          { "rotateZ": -5}
+        ]
+      },
+      "assets": {
+        "obj": "",
+        "mtl": ""
+      }
+    },
+    "skyliner": {
+      "building_name": "Skyliner",
+      "height": {
+        "tip": 195
+      },
+      "plane": {
+        "width": 60,
+        "height": 25
+      },
+      "style": {
+        "transform": [
+          { "translate": [77, -135, 93.5] },
+          { "rotateX": -90},
+           {"rotateZ": 0}
+        ]
+      }
+    }
+  },
+  "pano": "rondo.jpg"
+}
