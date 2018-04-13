@@ -44,7 +44,7 @@ export class Building extends React.Component {
           dimWidth={dimensions.width}
           dimHeight={this.state.height}
           dimDepth={dimensions.depth}
-          texture={asset('test_texture.png')}
+          lit={true}
         />
       </VrButton>
     )

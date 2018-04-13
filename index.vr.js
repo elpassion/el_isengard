@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  AmbientLight,
   AppRegistry,
   asset,
   Pano,
@@ -8,7 +7,8 @@ import {
 } from 'react-vr';
 import { Building } from './building';
 import { ElPassion } from './elpassion';
-import data from './data.json'
+import { SceneLight } from './scene_light';
+import data from './data.json';
 
 const buildings = data["buildings"]
 
@@ -18,7 +18,7 @@ export default class HackathonRondoDaszynskiego extends React.Component {
       <View>
         <Pano source={asset(data["pano"])}/>
         <ElPassion />
-        <AmbientLight intensity={ 2.6 } />
+        <SceneLight />
         <Building data={buildings["spinnaker"]}/>
         <Building data={buildings["generation"]}/>
         <Building data={buildings["skyliner"]} />
