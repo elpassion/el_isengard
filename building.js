@@ -12,10 +12,10 @@ export class Building extends React.Component {
   style() {
     return {
       transform: [
-        { translateX: this.props.data.position.x },
-        { translateY: this.props.data.position.y + this.props.height / 2},
-        { translateZ: this.props.data.position.z },
-        { rotateY: this.props.data.position.rotateY }
+        { translateX: this.props.data.building_position.x },
+        { translateY: this.props.data.building_position.y + this.props.height / 2},
+        { translateZ: this.props.data.building_position.z },
+        { rotateY: this.props.data.building_position.rotateY }
       ]
     }
   }

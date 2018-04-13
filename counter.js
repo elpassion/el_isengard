@@ -25,22 +25,15 @@ export class Counter extends React.Component {
             fontSize: 10,
             backgroundColor: 'black',
             transform: [
-
               {
                 translate: [
-                  this.props.data.position.x - (this.props.data.dimensions.width / 2) + 5,
-                  this.props.data.position.y + (this.props.height) + 10,
-                  this.props.data.position.z + (this.props.data.dimensions.depth / 2) + 5
+                  this.props.data.counter_position.x - (this.props.data.dimensions.width / 2) + 5,
+                  this.props.data.counter_position.y + (this.props.height) + 10,
+                  this.props.data.counter_position.z + (this.props.data.dimensions.depth / 2) + 5
                 ]
               },
               {
-                rotateX: 0
-              },
-              {
-                rotateY: 0
-              },
-              {
-                rotateZ: 0
+                rotateY: this.props.data.counter_position.rotateY
               }
             ]
           }}
