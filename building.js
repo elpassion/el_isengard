@@ -1,48 +1,41 @@
 import React from 'react';
-import { asset, Box, Plane, View, VrButton } from 'react-vr';
+import { asset, Box, VrButton } from 'react-vr';
 
 export class Building extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      height: 1
-    }
-    this.startChangingHeight = this.startChangingHeight.bind(this);
-    this.stopChangingHeight = this.stopChangingHeight.bind(this);
     this.refreshInvervalID = null;
+    this.handleEnter = this.handleEnter.bind(this);
+    this.handleExit = this.handleExit.bind(this);
   }
 
   style() {
     return {
       transform: [
         { translateX: this.props.data.position.x },
-        { translateY: this.props.data.position.y + this.state.height / 2},
+        { translateY: this.props.data.position.y + this.props.height / 2},
         { translateZ: this.props.data.position.z },
         { rotateY: this.props.data.position.rotateY }
       ]
     }
   }
 
-  startChangingHeight() {
-      this.refreshInvervalID = setInterval(() =>  {
-        if (this.state.height >= this.props.data.dimensions.height) { this.stopChangingHeight(); return }
-        this.setState({height: this.state.height + 1})
-      }, 10)
+  handleEnter() {
+    this.props.onEnter()
   }
 
-  stopChangingHeight() {
-    clearInterval(this.refreshInvervalID);
+  handleExit() {
+    this.props.onExit()
   }
 
   render() {
-    const dimensions = this.props.data.dimensions
     return (
-      <VrButton onEnter={this.startChangingHeight} onExit={this.stopChangingHeight}>
+      <VrButton onEnter={this.handleEnter} onExit={this.handleExit}>
         <Box
           style={this.style()}
-          dimWidth={dimensions.width}
-          dimHeight={this.state.height}
-          dimDepth={dimensions.depth}
+          dimWidth={this.props.data.dimensions.width}
+          dimHeight={this.props.height}
+          dimDepth={this.props.data.dimensions.depth}
           lit={true}
         />
       </VrButton>
