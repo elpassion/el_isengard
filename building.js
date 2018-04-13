@@ -1,11 +1,15 @@
 import React from 'react';
-import { asset, Box, Plane, VrButton } from 'react-vr';
+import { asset, Box, Plane, View, VrButton } from 'react-vr';
 
 export class Building extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { height: 1 }
-    this.changeHeight = this.changeHeight.bind(this);
+    this.state = {
+      height: 1
+    }
+    this.startChangingHeight = this.startChangingHeight.bind(this);
+    this.stopChangingHeight = this.stopChangingHeight.bind(this);
+    this.refreshInvervalID = null;
   }
 
   style() {
@@ -20,16 +24,21 @@ export class Building extends React.Component {
     }
   }
 
-  changeHeight() {
-    this.setState({
-      height: this.props.data.dimensions.height
-    })
+  startChangingHeight() {
+      this.refreshInvervalID = setInterval(() =>  {
+        if (this.state.height >= this.props.data.dimensions.height) { this.stopChangingHeight(); return }
+        this.setState({height: this.state.height + 1})
+      }, 10)
+  }
+
+  stopChangingHeight() {
+    clearInterval(this.refreshInvervalID);
   }
 
   render() {
     const dimensions = this.props.data.dimensions
     return (
-      <VrButton onClick={this.changeHeight}>
+      <VrButton onEnter={this.startChangingHeight} onExit={this.stopChangingHeight}>
         <Box
           style={this.style()}
           dimWidth={dimensions.width}
