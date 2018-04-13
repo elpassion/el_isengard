@@ -62,6 +62,69 @@
         "z": 60,
         "rotateY": 180
       }
+    },
+    "warsaw_hub_i": {
+      "building_name": "Warsaw HUB I",
+      "color": "khaki",
+      "dimensions": {
+        "width": 40,
+        "height": 86,
+        "depth": 28
+      },
+      "building_position": {
+        "x": 90,
+        "y": -135,
+        "z": 50,
+        "rotateY": 5
+      },
+      "counter_position": {
+        "x": 55,
+        "y": -45,
+        "z": 12,
+        "rotateY": 230
+      }
+    },
+    "warsaw_hub_ii": {
+      "building_name": "Warsaw HUB II",
+      "color": "dodgerblue",
+      "dimensions": {
+        "width": 60,
+        "height": 130,
+        "depth": 40
+      },
+      "building_position": {
+        "x": 150,
+        "y": -135,
+        "z": 50,
+        "rotateY": 10
+      },
+      "counter_position": {
+        "x": 100,
+        "y": 0,
+        "z": 0,
+        "rotateY": 230
+      }
+    },
+    "warsaw_hub_iii": {
+      "building_name": "Warsaw HUB III",
+      "color": "limegreen",
+      "dimensions": {
+        "width": 50,
+        "height": 130,
+        "depth": 80
+      },
+      "building_position": {
+        "x": 220,
+        "y": -135,
+        "z": 60,
+        "rotateY": 5
+      },
+      "counter_position": {
+        "x": 150,
+        "y": 30,
+        "z": -50,
+        "rotateY": 270
+      }
     }
   },
   "pano": "rondo.jpg"

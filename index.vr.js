@@ -25,6 +25,15 @@ export default class HackathonRondoDaszynskiego extends React.Component {
       },
       skyliner: {
         height: 1
+      },
+      warsaw_hub_i: {
+        height: 1
+      },
+      warsaw_hub_ii: {
+        height: 1
+      },
+      warsaw_hub_iii: {
+        height: 1
       }
     }
     this.startChangingHeight = this.startChangingHeight.bind(this);
@@ -75,9 +84,30 @@ export default class HackathonRondoDaszynskiego extends React.Component {
           onEnter={() => { this.startChangingHeight('skyliner')}}
           onExit={() =>{ this.stopChangingHeight() }}/>
 
+        <Building
+          data={buildings["warsaw_hub_i"]}
+          height={this.state["warsaw_hub_i"].height}
+          onEnter={() => { this.startChangingHeight('warsaw_hub_i')}}
+          onExit={() =>{ this.stopChangingHeight() }}/>
+        
+        <Building
+          data={buildings["warsaw_hub_ii"]}
+          height={this.state["warsaw_hub_ii"].height}
+          onEnter={() => { this.startChangingHeight('warsaw_hub_ii')}}
+          onExit={() =>{ this.stopChangingHeight() }}/>
+
+        <Building
+          data={buildings["warsaw_hub_iii"]}
+          height={this.state["warsaw_hub_iii"].height}
+          onEnter={() => { this.startChangingHeight('warsaw_hub_iii')}}
+          onExit={() =>{ this.stopChangingHeight() }}/>
+
         <Counter data={buildings["spinnaker"]} height={this.state["spinnaker"].height}/>
         <Counter data={buildings["generation"]} height={this.state["generation"].height} />
         <Counter data={buildings["skyliner"]} height={this.state["skyliner"].height} />
+        <Counter data={buildings["warsaw_hub_i"]} height={this.state["warsaw_hub_i"].height}/>
+        <Counter data={buildings["warsaw_hub_ii"]} height={this.state["warsaw_hub_ii"].height}/>
+        <Counter data={buildings["warsaw_hub_iii"]} height={this.state["warsaw_hub_iii"].height}/>
 
       </View>
     );
