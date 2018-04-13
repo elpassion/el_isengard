@@ -9,21 +9,15 @@ export class Counter extends React.Component {
     }
   }
   render() {
-    // console.log([
-    //   this.props.data.position.x - (this.props.data.dimensions.width / 2) + 5,
-    //   this.props.data.position.y + (this.props.data.dimensions.height) + 20,
-    //   this.props.data.position.z + (this.props.data.dimensions.depth / 2) + 5
-    // ]);
     return (
       <View
         style={{
-          width: 30
+          width: 50
         }}>
         <Text
           style={{
             textAlign: 'center',
             fontSize: 10,
-            backgroundColor: 'black',
             transform: [
               {
                 translate: [
@@ -39,6 +33,26 @@ export class Counter extends React.Component {
           }}
         >
         {this.props.height}m
+        </Text>
+        <Text
+          style={{
+            textAlign: 'center',
+            fontSize: 10,
+            transform: [
+              {
+                translate: [
+                  this.props.data.counter_position.x - (this.props.data.dimensions.width / 2) + 5,
+                  this.props.data.counter_position.y + (this.props.height) + 10,
+                  this.props.data.counter_position.z + (this.props.data.dimensions.depth / 2) + 5
+                ]
+              },
+              {
+                rotateY: this.props.data.counter_position.rotateY
+              }
+            ]
+          }}
+        >
+        {this.props.data.building_name}
         </Text>
       </View>
     )
