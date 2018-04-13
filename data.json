@@ -5,7 +5,7 @@
       "color": "red",
       "dimensions": {
         "width": 35,
-        "height": 203,
+        "height": 173,
         "depth": 85
       },
       "building_position": {
@@ -26,7 +26,7 @@
       "color": "green",
       "dimensions": {
         "width": 37,
-        "height": 180,
+        "height": 140,
         "depth": 35
       },
       "building_position": {
@@ -37,7 +37,7 @@
       },
       "counter_position": {
         "x": -59,
-        "y": -135,
+        "y": -90,
         "z": -76,
         "rotateY": 10
       }
@@ -47,7 +47,7 @@
       "color": "yellow",
       "dimensions": {
         "width": 60,
-        "height": 195,
+        "height": 160,
         "depth": 25
       },
       "building_position": {
@@ -58,7 +58,7 @@
       },
       "counter_position": {
         "x": 70,
-        "y": -110,
+        "y": -70,
         "z": 60,
         "rotateY": 180
       }
