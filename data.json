@@ -2,6 +2,7 @@
   "buildings": {
     "spinnaker": {
       "building_name": "Spinnaker Office Tower",
+      "color": "red",
       "dimensions": {
         "width": 35,
         "height": 203,
@@ -22,6 +23,7 @@
     },
     "generation": {
       "building_name": "Generation Park",
+      "color": "green",
       "dimensions": {
         "width": 37,
         "height": 180,
@@ -42,6 +44,7 @@
     },
     "skyliner": {
       "building_name": "Skyliner",
+      "color": "yellow",
       "dimensions": {
         "width": 60,
         "height": 195,

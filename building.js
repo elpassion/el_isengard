@@ -11,6 +11,7 @@ export class Building extends React.Component {
 
   style() {
     return {
+      color: this.props.data.color,
       transform: [
         { translateX: this.props.data.building_position.x },
         { translateY: this.props.data.building_position.y + this.props.height / 2},

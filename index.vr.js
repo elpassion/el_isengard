@@ -69,7 +69,8 @@ export default class HackathonRondoDaszynskiego extends React.Component {
           onEnter={() => { this.startChangingHeight('generation')}}
           onExit={() =>{ this.stopChangingHeight() }}/>
 
-        <Building data={buildings["skyliner"]}
+        <Building
+          data={buildings["skyliner"]}
           height={this.state["skyliner"].height}
           onEnter={() => { this.startChangingHeight('skyliner')}}
           onExit={() =>{ this.stopChangingHeight() }}/>

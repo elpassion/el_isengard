@@ -7,8 +7,7 @@ export class SceneLight extends React.Component {
       <DirectionalLight
         intensity={10}
         style={{
-          transform: [ {translate: [0, 0, 0]}],
-          color: 0xffffff 
+          transform: [ {translate: [0, 0, 0]}]
         }}
       />
     )
