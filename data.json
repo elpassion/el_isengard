@@ -7,10 +7,10 @@
         "height": 203,
         "depth": 85
       },
-      "transform": {
-        "translateX": 48,
-        "translateY": -135,
-        "translateZ": -90,
+      "position": {
+        "x": 48,
+        "y": -135,
+        "z": -90,
         "rotateY": -2
       }
     },
@@ -21,10 +21,10 @@
         "height": 180,
         "depth": 35
       },
-      "transform": {
-        "translateX": -59,
-        "translateY": -135,
-        "translateZ": -76,
+      "position": {
+        "x": -59,
+        "y": -135,
+        "z": -76,
         "rotateY": -5
       },
       "assets": {
@@ -39,10 +39,10 @@
         "height": 195,
         "depth": 25
       },
-      "transform": {
-        "translateX": 77,
-        "translateY": -135,
-        "translateZ": 93.5,
+      "position": {
+        "x": 77,
+        "y": -135,
+        "z": 93.5,
         "rotateY": 0
       }
     }

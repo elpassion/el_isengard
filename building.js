@@ -13,13 +13,12 @@ export class Building extends React.Component {
   }
 
   style() {
-    const transform = this.props.data.transform
     return {
       transform: [
-        { translateX: transform.translateX },
-        { translateY: transform.translateY + this.state.height / 2},
-        { translateZ: transform.translateZ },
-        { rotateY: transform.rotateY }
+        { translateX: this.props.data.position.x },
+        { translateY: this.props.data.position.y + this.state.height / 2},
+        { translateZ: this.props.data.position.z },
+        { rotateY: this.props.data.position.rotateY }
       ]
     }
   }
