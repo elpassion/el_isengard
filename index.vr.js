@@ -47,7 +47,7 @@ export default class HackathonRondoDaszynskiego extends React.Component {
       newState[buildingName] = {}
       newState[buildingName].height = this.state[buildingName].height + 1
       this.setState(newState);
-    }, 10)
+    }, 40)
 }
 
   stopChangingHeight() {
